@@ -34,7 +34,9 @@ function getFile(reqUrl) {
 app.use(compression());
 
 app.get('/clear', (req, res) => {
-  fileCache = {};
+  Object.keys(fileCache).forEach((key) => {
+    delete(fileCache[key]);
+  });
   res.send('File Cache Empty. ' + new Date());
   res.end();
 });
