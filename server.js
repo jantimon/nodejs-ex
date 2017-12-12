@@ -33,6 +33,12 @@ function getFile(reqUrl) {
 
 app.use(compression());
 
+app.get('/clear', (req, res) => {
+  fileCache = {};
+  res.send('File Cache Empty. ' + new Date());
+  res.end();
+});
+
 app.use('/', (req, res, next) => {
   getFile(req.url).then((content) => {
     res.send(content)

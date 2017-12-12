@@ -8,3 +8,4 @@ Usage:
 env TARGET="https://google.com/" node server.js
 ```
 
+Clear cache url: `/clear`
