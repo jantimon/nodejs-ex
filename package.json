@@ -6,12 +6,15 @@
   "dependencies": {
     "chai": "^3.5.0",
     "chai-http": "^2.0.1",
+    "compression": "1.7.1",
     "ejs": "^2.4.1",
-    "express": "^4.13.4",
+    "express": "4.16.2",
+    "glob": "7.1.2",
+    "http-proxy": "1.16.2",
     "mocha": "^2.4.5",
     "mongodb": "^2.1.16",
     "morgan": "^1.7.0",
-    "object-assign":"4.1.0"
+    "object-assign": "4.1.0"
   },
   "engine": {
     "node": "*",
@@ -23,12 +26,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "http://github.com/openshift/nodejs-ex.git"
+    "url": "http://github.com/jantimon/nodejs-ex.git"
   },
   "author": "Steve Speicher <sspeiche@gmail.com>",
   "license": "CC-BY-1.0",
   "bugs": {
-    "url": "http://github.com/openshift/nodejs-ex/issues"
+    "url": "http://github.com/jantimon/nodejs-ex/issues"
   },
-  "homepage": "http://github.com/openshift/nodejs-ex"
+  "homepage": "http://github.com/jantimon/nodejs-ex"
 }
